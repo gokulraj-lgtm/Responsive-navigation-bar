@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation Bar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="brand">
+            <a href="#">Brand</a>
+        </div>
+
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-navigation">
+            <span class="hamburger"></span>
+        </button>
+
+        <nav class="nav-menu" id="site-navigation" aria-label="Primary navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-actions">
+            <button class="theme-toggle" type="button" aria-label="Toggle theme">🌙</button>
+            <a class="secondary-button" href="#contact">Contact</a>
+            <a class="primary-button" href="#features">Get started</a>
+        </div>
+    </header>
+
+    <div class="menu-overlay" hidden></div>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1>Responsive Navigation Bar</h1>
+                <p>Build and test a modern, mobile-friendly nav menu that adapts to any screen size.</p>
+                <a class="primary-button" href="#features">Explore Features</a>
+            </div>
+        </section>
+
+        <section class="section section-grid" id="features">
+            <div>
+                <h2>Features</h2>
+                <p>Responsive layout, accessible menu toggle, and smooth transitions make this navigation bar easy to
+                    use on desktop and mobile.</p>
+            </div>
+
+            <div class="feature-cards">
+                <article class="feature-card">
+                    <h3>Mobile-friendly</h3>
+                    <p>Collapses into a clean hamburger menu on smaller viewports and expands smoothly when tapped.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>Accessible</h3>
+                    <p>Keyboard-friendly toggle button, ARIA labels, and focus styles keep the navigation usable for
+                        everyone.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>Easy to customize</h3>
+                    <p>Built with plain HTML, CSS, and JavaScript so you can adapt the design for any brand or layout.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="pricing">
+            <h2>Pricing</h2>
+            <p>Use this nav bar in projects, prototypes, and landing pages with minimal setup.</p>
+        </section>
+
+        <section class="section" id="about">
+            <h2>About</h2>
+            <p>The navigation menu collapses into a hamburger icon on smaller screens. It expands when clicked and
+                closes after selection.</p>
+        </section>
+
+        <section class="section" id="contact">
+            <h2>Contact</h2>
+            <p>Try resizing the browser to see the responsive behavior in action.</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
